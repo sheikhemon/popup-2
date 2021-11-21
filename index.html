@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>Popup</title>
+</head>
+
+<body>
+    <!---------------------------
+            Main Area Start
+    ----------------------------->
+    <main class="mainWrapper">
+        <!-- main popup -->
+        <section class="main_popup">
+            <!-- Left Side -->
+            <div class="left_popup">
+                <!-- Time Area -->
+                <div class="time_popup">
+                    <div class="single_time">
+                        <span>0</span>
+                        <span>6</span>
+                        <div>Hours</div>
+                    </div>
+                    <div class="single_time">
+                        <span>2</span>
+                        <span>0</span>
+                        <div>Minutes</div>
+                    </div>
+                    <div class="single_time">
+                        <span>4</span>
+                        <span>8</span>
+                        <div>Second</div>
+                    </div>
+                </div>
+                <!-- Popup content -->
+                <div class="popup_content">
+                    <h1>GET EXCITING OFFERS THIS <span>BLACK FRIDAY!</span></h1>
+                    <p>Get your favorite all Items <br> in one place</p>
+                </div>
+                <!-- Popup Button -->
+                <div class="link_area">
+                    <a class="jomphaa_btn" href="#">JOM12358469</a>
+                    <a class="shop_btn" href="#">GO TO SHOP</a>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="right_popup">
+                <!-- close -->
+                <div class="close" onclick="closeBtn()">&times;</div>
+                <!-- Image area -->
+                <div class="popup_image">
+                    <img src="assets/img/popup-shoes.png" alt="brand shoes image">
+                </div>
+                <div class="popup_gradient">
+                    <img src="assets/img/popup-gradient.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!---------------------------
+            Main Area Start
+    ----------------------------->
+    <!-- JS Custom Script-->
+    <script>
+        function closeBtn() {
+            document.querySelector('.main_popup').style.display = "none";
+            document.querySelector('.close').style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

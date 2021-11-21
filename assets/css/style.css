@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.mainWrapper {
+    position: relative;
+    font-size: 12px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.close {
+    z-index: 99999;
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 7, 77);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.main_popup {
+    padding: 1.9em;
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left_popup {
+    width: 25em;
+    padding: 2.2em 0;
+}
+
+.left_popup .time_popup {
+    width: 22em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left_popup .time_popup .single_time span {
+    background-color: #F4F4F4;
+    padding: .1em .3em;
+    font-size: 2em;
+    color: #432172;
+}
+
+.left_popup .time_popup .single_time div {
+    margin-top: 1em;
+    font-size: .5em;
+}
+
+.left_popup .popup_content h1 {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    max-width: 2.1em;
+    color: #BCBAD0;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2em;
+    transition: all .3s linear;
+}
+
+.left_popup .popup_content p {
+    color: #848484;
+    font-size: .9em;
+    line-height: 1.1em;
+    font-weight: 400;
+    margin-bottom: 4em;
+}
+
+.left_popup .popup_content p:hover {
+    color: #7094F6;
+}
+
+.left_popup .popup_content h1:hover {
+    color: #7094F6;
+}
+
+.left_popup .popup_content h1 span {
+    color: #000000;
+}
+
+.link_area {
+    width: 26em;
+}
+
+.link_area .jomphaa_btn, .shop_btn {
+    text-decoration: none;
+    padding: .5em 1.5em;
+    font-size: 1.1em;
+    letter-spacing: .14em;
+}
+
+.jomphaa_btn {
+    background: rgb(25, 12, 102);
+    background: linear-gradient(90deg, rgba(25, 12, 102, 1) 0%, rgba(2, 0, 36, 1) 100%, rgba(25, 12, 103, 1) 100%, rgba(29, 14, 112, 1) 100%, rgba(0, 212, 255, 1) 100%, rgba(2, 0, 36, 1) 100%);
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 0.7em;
+    position: relative;
+}
+
+.jomphaa_btn::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 103%;
+    border: .15em dashed #061849;
+    opacity: .5;
+    height: 115%;
+}
+
+.shop_btn {
+    background-color: #E3E5F2;
+    color: #000000;
+    font-weight: 500;
+}
+
+.right_popup {
+    position: relative;
+    z-index: 99999;
+}
+
+.popup_image img {
+    height: 40.2em;
+    margin-left: 1.2em;
+}
+
+.popup_gradient img {
+    z-index: -11111;
+    position: absolute;
+    bottom: -2em;
+    right: -1.92em;
+    height: 44.95em;
+}
+
+@media screen and (max-width: 667px) {
+    .mainWrapper {
+        font-size: 14px;
+        height: 100vh;
+    }
+
+    .main_popup {
+        padding: 1.5em;
+    }
+
+    .left_popup {
+        width: 15.5em;
+        padding: 1em 0;
+    }
+
+    .left_popup .time_popup .single_time span {
+        font-size: 1em;
+    }
+
+    .left_popup .time_popup {
+        width: 16em;
+        justify-content: space-evenly;
+    }
+
+    .left_popup .popup_content h1 {
+        margin-top: .5em;
+        max-width: 0em;
+        font-size: 1.5em;
+    }
+
+    .left_popup .popup_content p {
+        font-size: .7em;
+        margin-bottom: 3em;
+    }
+
+    .link_area {
+        width: 20em;
+    }
+
+    .link_area .jomphaa_btn, .shop_btn {
+        padding: .5em 1em;
+        font-size: .8em;
+    }
+
+    .jomphaa_btn {
+        margin-right: 0.2em;
+    }
+
+    .popup_image img {
+        display: none;
+    }
+
+    .popup_gradient img {
+        display: none;
+    }
+
+    .jomphaa_btn::before {
+        top: -3.9px;
+        left: -3.5px;
+        width: 103%;
+        height: 115%;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    .mainWrapper {
+        font-size: 12px;
+    }
+
+    .jomphaa_btn::before {
+        top: -4.2px;
+        left: -3.5px;
+        width: 103%;
+        height: 115%
+    }
+
+    .popup_gradient img {
+        bottom: -2em;
+        right: -1.92em;
+        height: 44.95em;
+    }
+}
+
+@media (max-width: 1370px) {
+    .mainWrapper {
+        font-size: 10px;
+    }
+
+    .jomphaa_btn::before {
+        top: -3px;
+        left: -3.5px;
+    }
+
+    .popup_gradient img {
+        height: 45em;
+    }
+}
